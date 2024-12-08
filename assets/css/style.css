@@ -111,12 +111,13 @@ body {
     margin: 0 30px;
     transition: all 0.5s;
 }
-.btn--big::after {
+
+.btn--big::after{
     content: attr(data-type);
+    font-size: 1rem;
+    color: #445361;
     position: relative;
     left: -0.5em;
-    font-size: 1rem;
-    color :grey;
 }
 
 .btn--blue {
@@ -168,11 +169,14 @@ body {
     background-color: #445361;
     border: 1px transparent;
     border-radius: 20px;
+    font-size: 1.5rem;
+
+
 }
 
 .btn--gray:active,
 .btn--gray:hover {
-    background-color: #0d1013;
+    background-color: black;
 }
 
 /* --------- Media queries */
@@ -215,6 +219,7 @@ body {
     }
     .btn--gray {
         margin-top: 0;
+        
     }
 
     .score-area {
